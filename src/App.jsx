@@ -5,6 +5,7 @@ import DemoClassSpotlight from "./components/DemoClassSpotlight";
 import CourseTracks from "./components/CourseTracks";
 import CurriculumAccordion from "./components/CurriculumAccordion";
 import StudentRoadmap from "./components/StudentRoadmap";
+import InteractiveFeatures from "./components/InteractiveFeatures";
 import ResourcesSection from "./components/ResourcesSection";
 import FAQSection from "./components/FAQSection";
 import RegistrationModal from "./components/RegistrationModal";
@@ -27,7 +28,7 @@ export default function App() {
       {/* Main Content Sections */}
       <main className="flex-grow">
         {/* Hero Section */}
-        <Hero onOpenRegistration={handleOpenRegistration} />
+        <Hero onOpenModal={handleOpenRegistration} />
 
         {/* Demo Class Spotlight (Flyer Trial Card) */}
         <DemoClassSpotlight onOpenRegistration={handleOpenRegistration} />
@@ -41,7 +42,10 @@ export default function App() {
         {/* 3-Step Student Career Roadmap */}
         <StudentRoadmap onOpenRegistration={handleOpenRegistration} />
 
-        {/* Developer Resources & Downloadable Cheat Sheets */}
+        {/* Verified Learning Resources & Notes */}
+        <InteractiveFeatures />
+
+        {/* Downloadable Cheat Sheets */}
         <ResourcesSection />
 
         {/* FAQs */}

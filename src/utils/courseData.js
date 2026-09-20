@@ -1,48 +1,65 @@
 export const COURSE_TRACKS = [
   {
     id: "dsa",
-    title: "Programming & Data Structures & Algorithms (DSA)",
-    badge: "ENROLLMENT OPEN • LIVE BATCH",
-    badgeType: "active",
+    title: "Programming & Data Structures & Algorithms",
     status: "OPEN",
+    statusBadge: "ENROLLMENT OPEN • LIVE BATCH",
     duration: "60+ Hours Live",
-    problems: "150+ Curated Problems",
-    mode: "Live Interactive + Mentorship",
-    description: "From first lines of code in C++ to mastering memory models, arrays, pointers, trees, graphs, dynamic programming, and competitive interview problem solving.",
-    targetAudience: "Absolute beginners, CS undergrads, and software engineers targeting high-paying software roles.",
+    problems: "150+ Curated Interview Problems",
+    description: "From your first line of code to mastering memory models, trees, graphs, and dynamic programming.",
     features: [
-      "60+ Hours of Live Interactive Classes",
-      "150+ Curated LeetCode & Codeforces Problems",
-      "Weekly Logic-Building Hackathons",
-      "Dedicated Discord / WhatsApp Doubt Clearing",
-      "1-on-1 Code Review & Resume Guidance"
+      "Live Doubt Clearing",
+      "Hackathons & Mock Rounds",
+      "Structured Notes & Cheatsheets"
     ],
-    ctaText: "Save Your Spot for Demo Class",
-    ctaSecondary: "Join Cohort via WhatsApp",
+    ctaText: "Save Your Spot for Demo",
     active: true,
   },
   {
     id: "web-agentic-ai",
     title: "Modern Web Development & Agentic AI",
-    badge: "COMING SOON • NEXT PHASE",
-    badgeType: "upcoming",
     status: "UPCOMING",
-    duration: "Next Cohort Phase",
+    statusBadge: "COMING SOON • NEXT PHASE",
+    duration: "Next Cohort",
     problems: "Production Apps & Autonomous Agents",
-    mode: "Project-Based Cohort",
-    description: "Your 2nd step after DSA: Building production web applications and autonomous AI agents. Covering modern JavaScript/TypeScript, React, Node.js, vector databases, LangChain, and autonomous LLM agentic workflows.",
-    targetAudience: "Students with DSA fundamentals ready to build real-world AI-powered SaaS products.",
+    description: "Full-stack architectures, API design, vector databases, and autonomous LLM agentic workflows.",
     features: [
-      "Full-Stack Architectures (React, Next.js, Node.js)",
-      "REST & GraphQL API Engineering",
-      "Vector DBs (Pinecone/Qdrant) & Embeddings",
-      "Autonomous Agent Workflows (LangChain / LlamaIndex)",
-      "Production Cloud Deployment & CI/CD"
+      "React & Node.js Core",
+      "LangChain & Vector DBs",
+      "Autonomous Agent Workflows"
     ],
     ctaText: "Join Priority Waitlist",
-    ctaSecondary: "Get Notified",
     active: false,
   },
+];
+
+export const REAL_RESOURCES = [
+  {
+    id: "cpp-stl-cheatsheet",
+    title: "C++ STL & Big-O Quick Reference",
+    description: "Time & space complexity cheat sheet covering Vectors, Maps, Sets, and Algorithms.",
+    type: "Interactive Sheet",
+    actionType: "link",
+    url: "https://en.cppreference.com/w/cpp/container",
+    badge: "Official Reference"
+  },
+  {
+    id: "blind75-roadmap",
+    title: "150 Interview Problem Roadmap",
+    description: "Curated problem patterns by pattern category (Two Pointers, Sliding Window, DP, Graphs).",
+    type: "Curated Roadmap",
+    actionType: "link",
+    url: "https://neetcode.io/roadmap",
+    badge: "Interactive Roadmap"
+  },
+  {
+    id: "demo-lecture-notes",
+    title: "Demo Class Starter Notes (PDF)",
+    description: "Handcrafted notes on C++ Fundamentals & Memory Models prepared by Aghaaz Labs.",
+    type: "Instant WhatsApp Access",
+    actionType: "whatsapp",
+    badge: "Free Handout"
+  }
 ];
 
 export const DEMO_PERKS = [
