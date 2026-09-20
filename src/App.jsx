@@ -6,7 +6,6 @@ import CourseTracks from "./components/CourseTracks";
 import CurriculumAccordion from "./components/CurriculumAccordion";
 import StudentRoadmap from "./components/StudentRoadmap";
 import InteractiveFeatures from "./components/InteractiveFeatures";
-import ResourcesSection from "./components/ResourcesSection";
 import FAQSection from "./components/FAQSection";
 import RegistrationModal from "./components/RegistrationModal";
 import FooterBanner from "./components/FooterBanner";
@@ -44,9 +43,6 @@ export default function App() {
 
         {/* Verified Learning Resources & Notes */}
         <InteractiveFeatures />
-
-        {/* Downloadable Cheat Sheets */}
-        <ResourcesSection />
 
         {/* FAQs */}
         <FAQSection onOpenRegistration={handleOpenRegistration} />
