@@ -5,12 +5,10 @@ import {
   MessageSquare,
   Sparkles,
   Check,
-  Zap,
   BookOpen,
   BrainCircuit,
   Binary,
   Code,
-  ArrowRight,
 } from "lucide-react";
 import { DEMO_FEATURE_CARDS, DEMO_PERKS } from "../utils/courseData";
 
@@ -67,7 +65,7 @@ export default function DemoClassSpotlight({ onOpenRegistration }) {
             {DEMO_FEATURE_CARDS.map((card, idx) => (
               <div
                 key={idx}
-                className="group bg-slate-50 hover:bg-white p-6 rounded-2xl border border-slate-200/80 hover:border-indigo-300 hover:shadow-lg transition-all duration-300 flex flex-col justify-between"
+                className="group bg-slate-50 hover:bg-white p-6 rounded-2xl border border-slate-200/80 hover:border-indigo-300 hover:shadow-lg transition-all duration-300 flex flex-col justify-between text-left"
               >
                 <div>
                   <div className="flex items-center justify-between mb-4">
@@ -96,7 +94,7 @@ export default function DemoClassSpotlight({ onOpenRegistration }) {
           </div>
 
           {/* Free Attendee Perks Bar */}
-          <div className="bg-gradient-to-r from-slate-900 via-indigo-950 to-slate-900 rounded-2xl p-6 text-white border border-indigo-500/20 relative z-10 mb-8 shadow-md">
+          <div className="bg-gradient-to-r from-slate-900 via-indigo-950 to-slate-900 rounded-2xl p-6 text-white border border-indigo-500/20 relative z-10 shadow-md">
             <div className="text-center sm:text-left mb-4">
               <span className="text-xs font-bold text-sky-400 uppercase tracking-wider">
                 🎁 Exclusive Free Attendee Perks
@@ -106,7 +104,7 @@ export default function DemoClassSpotlight({ onOpenRegistration }) {
               </h4>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-left">
               {DEMO_PERKS.map((perk, idx) => (
                 <div
                   key={idx}
@@ -127,31 +125,6 @@ export default function DemoClassSpotlight({ onOpenRegistration }) {
                 </div>
               ))}
             </div>
-          </div>
-
-          {/* Instant Booking Callout */}
-          <div className="flex flex-col sm:flex-row items-center justify-between gap-4 p-4 sm:p-6 bg-amber-50 rounded-2xl border border-amber-200/80 relative z-10">
-            <div className="flex items-center gap-3 text-left">
-              <div className="w-10 h-10 rounded-full bg-amber-400/20 flex items-center justify-center text-amber-800 flex-shrink-0">
-                <Zap className="w-5 h-5 fill-amber-600 text-amber-600" />
-              </div>
-              <div>
-                <span className="text-xs font-extrabold text-amber-900 uppercase tracking-wide bg-amber-200/80 px-2 py-0.5 rounded">
-                  Limited Seats Available
-                </span>
-                <p className="text-sm font-bold text-slate-800 mt-0.5">
-                  Over 120+ students already reserved for this Sunday's batch demo.
-                </p>
-              </div>
-            </div>
-
-            <button
-              onClick={() => onOpenRegistration("Programming & DSA Demo Class")}
-              className="w-full sm:w-auto px-6 py-3 rounded-xl font-extrabold text-xs sm:text-sm text-white bg-indigo-600 hover:bg-indigo-700 shadow-md hover:shadow-indigo-500/30 transition-all flex items-center justify-center gap-2 cursor-pointer flex-shrink-0"
-            >
-              <span>Book My Free Spot Now</span>
-              <ArrowRight className="w-4 h-4" />
-            </button>
           </div>
         </div>
       </div>
